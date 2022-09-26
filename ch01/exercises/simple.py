@@ -8,10 +8,11 @@ print(10%15)
 print(10%10)
 print(0%10)
 print(10/15)
+# Better to write as 2/3
 
-rate = input("Please input the exchange rate: ")
-rate = float(rate)
-amount = input("Please input the amount to exchange: ")
-amount = float(amount)
-result = (rate * amount) - 3
-print("you received $", result, "back")
+#Money exchange
+rate = float(input("What is the exchange rate from Euros to US Dollars? "))
+amount = float(input("How Many Euros would you like to exchange? "))
+total = rate*amount
+result = round(total - 3, 2)
+print("You received $" + str(result))
