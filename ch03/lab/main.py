@@ -34,19 +34,61 @@ pygame.init()
 window = pygame.display.set_mode()
 side_length = 50
 offset = 100
-off = False
-while off:
-  coords = []
-  num_slides = input('How many sides? ')
-  for i in num_sides:
-    theta = (2 * math.pi * i)/ num_sides
-    x = side_length * math.cos(theta) + offset
-    y = side_length * math.sin(theta) + offset
-  coords.append((x,y))
-  pygame.draw.polygon(window, 'white', coords)
-  pygame.display.flip()
-  pygame.time.wait(200)
-  if num_sides == 'done':
-    off = True
+coords = []
+num_sides = 3
+for i in range(num_sides):
+  theta = (2 * math.pi * i)/ num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  coords.append([x,y])
+pygame.draw.polygon(window, 'white', coords)
+pygame.display.flip()
+pygame.time.wait(200)
+window.fill('black')
 
-window.exitonclick()
+num_sides = 4
+coords.clear()
+for i in range(num_sides):
+  theta = (2 * math.pi * i)/ num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  coords.append([x,y])
+pygame.draw.polygon(window, 'white', coords)
+pygame.display.flip()
+pygame.time.wait(200)
+window.fill('black')
+
+num_sides = 6
+coords.clear()
+for i in range(num_sides):
+  theta = (2 * math.pi * i)/ num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  coords.append([x,y])
+pygame.draw.polygon(window, 'white', coords)
+pygame.display.flip()
+pygame.time.wait(200)
+window.fill('black')
+
+num_sides = 9
+coords.clear()
+for i in range(num_sides):
+  theta = (2 * math.pi * i)/ num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  coords.append([x,y])
+pygame.draw.polygon(window, 'white', coords)
+pygame.display.flip()
+pygame.time.wait(200)
+window.fill('black')
+
+num_sides = 360
+coords.clear()
+for i in range(num_sides):
+  theta = (2 * math.pi * i)/ num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  coords.append([x,y])
+pygame.draw.polygon(window, 'white', coords)
+pygame.display.flip()
+pygame.time.wait(200)
