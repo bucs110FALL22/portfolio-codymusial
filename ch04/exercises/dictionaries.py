@@ -18,4 +18,4 @@ substitutions = {
 
 for key, value in substitutions.items():
   myarticle = mystr.replace(key,value)
-print(myarticle + substitutions)
+print(myarticle)
