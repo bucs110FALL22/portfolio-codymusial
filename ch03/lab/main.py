@@ -43,7 +43,7 @@ for i in range(num_sides):
   coords.append([x,y])
 pygame.draw.polygon(window, 'white', coords)
 pygame.display.flip()
-pygame.time.wait(200)
+pygame.time.wait(1000)
 window.fill('black')
 
 num_sides = 4
@@ -55,7 +55,7 @@ for i in range(num_sides):
   coords.append([x,y])
 pygame.draw.polygon(window, 'white', coords)
 pygame.display.flip()
-pygame.time.wait(200)
+pygame.time.wait(1000)
 window.fill('black')
 
 num_sides = 6
@@ -67,7 +67,7 @@ for i in range(num_sides):
   coords.append([x,y])
 pygame.draw.polygon(window, 'white', coords)
 pygame.display.flip()
-pygame.time.wait(200)
+pygame.time.wait(1000)
 window.fill('black')
 
 num_sides = 9
@@ -79,7 +79,7 @@ for i in range(num_sides):
   coords.append([x,y])
 pygame.draw.polygon(window, 'white', coords)
 pygame.display.flip()
-pygame.time.wait(200)
+pygame.time.wait(1000)
 window.fill('black')
 
 num_sides = 360
@@ -91,4 +91,4 @@ for i in range(num_sides):
   coords.append([x,y])
 pygame.draw.polygon(window, 'white', coords)
 pygame.display.flip()
-pygame.time.wait(200)
+pygame.time.wait(1000)
