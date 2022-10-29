@@ -18,12 +18,12 @@ For each one below you should have a basic description of a program idea, a coup
 
 ## Project Idea 1
 
-< add your idea here >
+< Smash Bros game >
 
 ## Project Idea 2
 
-< add your idea here >
+< Block Puzzle Gem >
 
 ## Project Idea 3
 
-< add your idea here >
+< Image Matching Game >
