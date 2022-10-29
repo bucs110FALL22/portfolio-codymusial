@@ -9,7 +9,7 @@ x = []
 y = []
 max_so_far = 0
 font = pygame.font.Font(None, 30)
-for star in range(2,upper_limit+1,1):
+for start in range(2,upper_limit+1,1):
   n = start
   count = 0
   while n>1:
