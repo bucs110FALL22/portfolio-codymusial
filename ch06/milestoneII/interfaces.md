@@ -23,12 +23,134 @@ Come up with interfaces fot 3 possible classes you think you may need. Again, br
 
 ## Class Interface 1
 
-< add your interface >
+class tiles:
+  def __init__(self, picture, id):
+    self.pic = picture
+    self.id = id
+  def _matches(self):
+    1 = 4
+    2 = 3
+
+t1 = tiles('Bearcats', 1)
+t2 = tiles('Blue Devils', 2)
+t3 = tiles('Blue Devils', 3)
+t4 = tiles('Bearcats', 4)
+
+#60 more times to make an 8x8
 
 ## Class Interface 2
 
-< add your interface >
+class matches:
+  def__init__(self,):
+    self.pic = picture
+    self.id = id
+    
+    
+t1 = t4
+t2 = t3
+#30 more times for all 64 pairs
+
 
 ## Class Interface 3
 
-< add your interface >
+import pygame
+import time
+pygame.init()
+
+ck = pygame.display.set_mode((800,600)) 
+
+pygame.display.set_caption("matching game") 
+
+clock = pygame.time.Clock() 
+
+start_ck = pygame.Surface(ck.get_size()) 
+
+start_ck2 = pygame.Surface(ck.get_size()) 
+
+start_ck = start_ck.convert()
+
+start_ck2 = start_ck2.convert()
+
+start_ck.fill((255,255,255))
+
+start_ck2.fill((0,255,0))
+
+
+n1 = True
+
+while n1:
+  clock.tick(30)
+  buttons = pygame.mouse.get_pressed()
+
+  x1, y1 = pygame.mouse.get_pos()
+
+  if x1 >= 227 and x1 <= 555 and y1 >= 261 and y1 <=327:
+
+    start_ck.blit(i11, (200, 240))
+
+    if buttons[0]:
+
+        n1 = False
+
+      elif x1 >= 227 and x1 <= 555 and y1 >= 381 and y1 <=447:
+
+start_ck.blit(i21, (200, 360))
+
+if buttons[0]:
+
+pygame.quit()
+
+exit()
+
+elif x1 >= 227 and x1 <= 555 and y1 >= 501 and y1 <=567:
+
+start_ck.blit(i31, (200, 480))
+
+else:
+
+start_ck.blit(i1, (200, 240))
+
+start_ck.blit(i2, (200, 360))
+
+start_ck.blit(i3, (200, 480))
+
+ck.blit(start_ck,(0,0))
+
+pygame.display.update()
+for event in pygame.event.get():
+
+if event.type == pygame.QUIT:
+
+print("quit the game")
+
+
+pygame.quit()
+
+exit()
+
+ck.blit(start_ck2,(0,0))
+
+pygame.display.update()
+
+
+n2 = True
+
+while n2:
+
+clock.tick(30)
+
+ck.blit(start_ck2, (0, 0))
+
+start_ck2.blit(bg,(0,0))
+
+pygame.display.update()
+
+for event in pygame.event.get():
+
+if event.type == pygame.QUIT:
+
+print("quit game")
+
+pygame.quit()
+
+exit()
